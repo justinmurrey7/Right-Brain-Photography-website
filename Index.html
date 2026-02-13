@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,23 +8,36 @@
     <link rel="stylesheet" href="css/maim.css" />
   </head>
   <body>
+    <!-- HEADER -->
     <header>
       <nav class="navbar">
         <!-- Logo -->
-        <a href="#" class="navbar-logo">
+        <a href="index.html" class="navbar-logo">
           <img src="images/logo3copy.png" alt="Company Logo" />
         </a>
 
         <!-- Navigation Links -->
         <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+
+          <!-- Forms Dropdown -->
+          <li class="dropdown">
+            <a href="#">Forms ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="booking-form.html">Booking Form</a></li>
+              <li><a href="model-release.html">Model Release</a></li>
+              <li><a href="print-order.html">Print Order Form</a></li>
+            </ul>
+          </li>
+
           <li><a href="aboutme.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="test.html">test</a></li>
         </ul>
       </nav>
     </header>
+
     <section class="hero">
       <div class="hero-content">
         <h1>Every Moment Has a Story</h1>
@@ -40,7 +53,7 @@
       </div>
     </section>
     <section class="guess-flip">
-      <h2 class="section-title">Portfolio?</h2>
+      <h2 class="section-title">Portfolio</h2>
 
       <!-- Family -->
       <div class="flip-row">
@@ -234,8 +247,14 @@
       <!-- Build Your Own Wallet -->
       <div class="service-card">
         <h3>Build Your Own Wallet</h3>
-        <p>Sizes available: 4x6, 5x7, 8x10, 8x10 Collage, CD / Jump Drive</p>
-        <p><em>Any other sizes require invoice pricing.</em></p>
+        <p>
+          1 – 4x6 print- $2.25/each <br />
+          1 – 5x7 print- $4.00/each <br />
+          1 – 8x10 Print (single image)- $10.00/each <br />
+          1 – 8x10 Print 4 single image collage- $15.00/each <br />
+          1 – CD / DVD / jump drive / Digital Negatives - $30.00/ each
+        </p>
+        <a href="pricing.html" class="gallery-btn">View Price List</a>
       </div>
 
       <!-- School Portraits -->
@@ -248,6 +267,7 @@
           <li>Four 4x6s</li>
         </ul>
         <p>Price: $50</p>
+        <a href="pricing.html" class="gallery-btn">View package List</a>
       </div>
 
       <!-- Senior Portrait -->
@@ -260,6 +280,7 @@
           <li>Four 4x6s (single images)</li>
         </ul>
         <p>Price: $62</p>
+        <a href="pricing.html" class="gallery-btn">View package List</a>
       </div>
 
       <!-- Family Wall -->
@@ -271,6 +292,7 @@
           <li>One portrait of each child (up to 4 children)</li>
         </ul>
         <p>Price: $65</p>
+        <a href="pricing.html" class="gallery-btn">View package List</a>
       </div>
 
       <!-- Grandparents Wall -->
@@ -282,6 +304,7 @@
           <li>One 5x7 pose of each child (up to 4 children)</li>
         </ul>
         <p>Price: $70</p>
+        <a href="pricing.html" class="gallery-btn">View package List</a>
       </div>
 
       <!-- Engagement Portrait -->
@@ -293,6 +316,7 @@
           <li>CD / Jump Drive or online digital media access</li>
         </ul>
         <p>Price: $90</p>
+        <a href="pricing.html" class="gallery-btn">View package List</a>
       </div>
 
       <!-- Wedding -->
@@ -304,6 +328,7 @@
           <li>One 8x10 collage with four images</li>
         </ul>
         <p>Price: $170</p>
+        <a href="pricing.html" class="gallery-btn">View package List</a>
       </div>
 
       <!-- Party & Events -->
@@ -314,6 +339,7 @@
           <li>CD with all photos of the event</li>
         </ul>
         <p>$80</p>
+        <a href="pricing.html" class="gallery-btn">View package List</a>
       </div>
 
       <div class="services-cta">
@@ -322,83 +348,86 @@
         >
       </div>
     </section>
-        <!-- FAQ SECTION -->
-        <section class="faq" id="faq">
-          <div class="faq-inner">
-            <h2>Frequently Asked Questions</h2>
+    <!-- FAQ SECTION -->
+    <section class="faq" id="faq">
+      <div class="faq-inner">
+        <h2>Frequently Asked Questions</h2>
 
-            <div class="faq-item">
-              <button class="faq-question" type="button">
-                What if I have more than four kids?
-                <span class="faq-icon">+</span>
-              </button>
-              <div class="faq-answer">
-                <p>
-                  No problem at all! Families come in all sizes, and we’re happy
-                  to work with you. If you have more than four children, just
-                  let us know ahead of time so we can plan accordingly.
-                  Additional children may require a small added fee, and we’ll
-                  always discuss that upfront—no surprises.
-                </p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question" type="button">
-                Can I bring props to the photo shoot?
-                <span class="faq-icon">+</span>
-              </button>
-              <div class="faq-answer">
-                <p>
-                  Absolutely! Props are a great way to make your session
-                  personal and meaningful. Feel free to bring items like hats,
-                  sports gear, musical instruments, blankets, signs, or anything
-                  special to your family. If you’re unsure whether a prop will
-                  work, we’re happy to help you decide before the session.
-                </p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question" type="button">
-                What types of payments do you accept?
-                <span class="faq-icon">+</span>
-              </button>
-              <div class="faq-answer">
-                <p>
-                  We accept multiple forms of payment for your convenience,
-                  including cash, PayPal, and digital payments (such as Venmo,
-                  Cash App, or similar services).
-                </p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question" type="button">
-                Do you offer payment options?
-                <span class="faq-icon">+</span>
-              </button>
-              <div class="faq-answer">
-                <p>
-                  Yes, we do offer payment options. Payment plans are available
-                  for all packages and sessions. Just ask during booking, and
-                  we’ll work with you to find an option that fits your needs.
-                  Including Bartering and trading.
-                </p>
-              </div>
-            </div>
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            What if I have more than four kids?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              No problem at all! Families come in all sizes, and we’re happy to
+              work with you. If you have more than four children, just let us
+              know ahead of time so we can plan accordingly. Additional children
+              may require a small added fee, and we’ll always discuss that
+              upfront—no surprises.
+            </p>
           </div>
-          <script src="JS/FAQ.js"></script>
-        </section>
-         <footer class="site-footer">
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            Can I bring props to the photo shoot?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Absolutely! Props are a great way to make your session personal
+              and meaningful. Feel free to bring items like hats, sports gear,
+              musical instruments, blankets, signs, or anything special to your
+              family. If you’re unsure whether a prop will work, we’re happy to
+              help you decide before the session.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            What types of payments do you accept?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              We accept multiple forms of payment for your convenience,
+              including cash, PayPal, and digital payments (such as Venmo, Cash
+              App, or similar services).
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            Do you offer payment options?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes, we do offer payment options. Payment plans are available for
+              all packages and sessions. Just ask during booking, and we’ll work
+              with you to find an option that fits your needs. Including
+              Bartering and trading.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--footer-->
+
+    <footer class="site-footer">
       <div class="footer-container">
         <!-- NAVIGATION -->
         <div class="footer-section">
           <h3>Navigation</h3>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="aboutme.html">About</a></li>
+            <li><a href="services.html">Portfolio</a></li>
+            <li><a href="forms.html">Forms</a></li>
             <li><a href="pricing.html">Pricing</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -434,7 +463,6 @@
         <p>© 2026 Right Brain Photography. All rights reserved.</p>
       </div>
     </footer>
-      </body>
-    </html>
+    <script src="JS/FAQ.js"></script>
   </body>
 </html>

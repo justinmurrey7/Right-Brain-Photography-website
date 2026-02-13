@@ -1,0 +1,196 @@
+/* Matches your existing vibe: dark gray + clean type + white accents */
+.booking-section {
+  padding: 70px 18px;
+  background: linear-gradient(180deg, #8a8a8a 0%, #575757 45%, #3f3f3f 100%);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.booking-container {
+  max-width: 1050px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.28);
+  border: 2px solid #000;
+  border-radius: 18px;
+  padding: 28px 22px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+.booking-header h1 {
+  margin: 0 0 10px 0;
+  color: #ffffff;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+}
+
+.booking-header p {
+  margin: 0 0 22px 0;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+  max-width: 850px;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.form-group legend {
+  padding: 0 10px;
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-field.full {
+  grid-column: 1 / -1;
+}
+
+.form-field label,
+.label-like {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 0.95rem;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.22);
+  background: rgba(0, 0, 0, 0.35);
+  color: #ffffff;
+  outline: none;
+  transition:
+    border-color 0.25s ease,
+    background 0.25s ease;
+  font-family: inherit;
+}
+
+.booking-form input::placeholder,
+.booking-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+  border-color: rgba(255, 255, 255, 0.65);
+  background: rgba(0, 0, 0, 0.48);
+}
+
+.booking-form textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.radio-grid,
+.check-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.choice {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.16);
+  background: rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  user-select: none;
+  transition:
+    transform 0.15s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+.choice:hover {
+  transform: translateY(-1px);
+  border-color: rgba(255, 255, 255, 0.35);
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.choice input {
+  width: auto;
+  margin: 0;
+  accent-color: #ffffff; /* modern browsers */
+}
+
+.choice span {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.95rem;
+}
+
+.form-actions {
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.form-note {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+/* Mobile */
+@media (max-width: 820px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  .radio-grid,
+  .check-grid {
+    grid-template-columns: 1fr;
+  }
+  .booking-header h1 {
+    font-size: 1.7rem;
+  }
+}
+
+/* Your existing button style (kept here in case it's not already global) */
+.gallery-btn {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 12px 28px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.gallery-btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
